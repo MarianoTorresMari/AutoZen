@@ -11,3 +11,9 @@
   font-weight: 200;
   font-style: normal;
 }
+.carousel-item img{
+
+  width: 1000px;
+  height: 800px;
+  object-fit: cover;
+}
