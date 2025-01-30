@@ -37,4 +37,18 @@
   color: rgb(134, 0, 0);
   filter: drop-shadow(2px 2px 2px);
   transition: 0.3s ease-in-out;
+height: 300px;
+object-fit:cover;
+}
+#carouselExampleIndicators{
+  max-width: 1200px; 
+  max-height: 600px; 
+  margin: 0 auto; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px; 
+  border: 3px solid #000000; 
+  overflow:hidden;
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
 }
