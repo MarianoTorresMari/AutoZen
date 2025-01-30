@@ -37,8 +37,7 @@
   color: rgb(134, 0, 0);
   filter: drop-shadow(2px 2px 2px);
   transition: 0.3s ease-in-out;
-height: 300px;
-object-fit:cover;
+
 }
 #carouselExampleIndicators{
   max-width: 1200px; 
