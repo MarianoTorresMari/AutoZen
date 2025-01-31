@@ -45,32 +45,8 @@
   font-style: normal;
 }
 .carousel-item img{
-
-  width: 1000px;
-  height: 800px;
-  object-fit: cover;
-}
-.card img {
-
-  height: 300px;
-  object-fit: cover;
-
-}
-.boton a{
-
-  background-color: rgb(134, 0, 0);
-  border-color: white;
-  color: white;
-
-}
-.boton a:hover{
-
-  background-color: white;
-  border-color: rgb(134, 0, 0) ;
-  color: rgb(134, 0, 0);
-  filter: drop-shadow(2px 2px 2px);
-  transition: 0.3s ease-in-out;
-
+height: 300px;
+object-fit:cover;
 }
 #carouselExampleIndicators{
   max-width: 1200px; 
