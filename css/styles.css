@@ -14,7 +14,7 @@ a{
   text-decoration: none;
   color: white;
 }
-img{
+.navbar img{
 width: 150px;
 height: 150px;
 }
@@ -247,3 +247,4 @@ height: 4rem;
   width: 200px;
   height: 200px;
  }
+ 
