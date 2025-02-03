@@ -28,6 +28,7 @@ height: 150px;
   background-color: black;
   align-items: center;
   padding: 50px;
+
  /*  display: inline-block; */}
 
 ul{
@@ -242,5 +243,9 @@ color: rgb(134, 0, 0);
 filter: drop-shadow(2px 2px 2px);
 transition: 0.3s ease-in-out;
 height: 4rem;
+ }
+ .logof img{
 
-}
+  width: 200px;
+  height: 200px;
+ }
