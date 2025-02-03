@@ -74,7 +74,6 @@ object-fit: cover;
   &:hover{
     filter: drop-shadow(20px 20px 20px black);
     transition: 0.3s ease-in-out;
-    background-color: white;
   }
 img {
 height: 300px;
