@@ -3,7 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.navbar{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 0 50px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+ img{
+  width: 150px;
+  height: 150px;
+ }
+}
 .footer{
     display: flex;
     flex-direction: row;
@@ -79,4 +92,65 @@
   border: 3px solid #000000; 
   overflow:hidden;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
+.main{
+
+  background-image: url(../imagenes/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #fafafa10;
+  border-radius: 25px;
+
+}
+.titulo {
+  
+  width: 50rem;
+  height: 7rem;
+  border: 3px solid #fafafa10;
+  border-radius: 1rem;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  color: white;
+  
+}
+.contenedor{
+  background-image: url(../imagenes/fondo2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #fafafa10;
+  border-radius: 25px;
+  
+}
+.cuerpo{
+
+  background-color: black;
+}
+.registro{
+  color: white;
+  margin-top: -9px;
+}
+.registro:hover{
+  color: white;
+}
+.nav-link:hover{
+  color: white;
+
+}
+.boton button{
+  background-color: rgb(134, 0, 0);
+  border-color: white;
+  color: white;
+}
+.boton button:hover{
+  background-color: white;
+  border-color: rgb(134, 0, 0) ;
+  color: rgb(134, 0, 0);
+  filter: drop-shadow(2px 2px 2px);
+  transition: 0.3s ease-in-out;
+}
+.modal-title{
+  color: black;
 }
