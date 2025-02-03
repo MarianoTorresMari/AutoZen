@@ -140,13 +140,14 @@ margin-top: -9px;
 color: white;
 }
 .nav-link:hover{
-color: white;
+  color: rgb(134, 0, 0);
 
 }
 .boton button{
-background-color: rgb(134, 0, 0);
-border-color: white;
-color: white;
+  background-color: rgb(134, 0, 0);
+  border-color: white;
+  color: white;
+  width: 100%;
 }
 .boton button:hover{
 background-color: white;
@@ -156,5 +157,26 @@ filter: drop-shadow(2px 2px 2px);
 transition: 0.3s ease-in-out;
 }
 .modal-title{
-color: black;
+  color: black;
+}
+.glass{
+  width: 30rem;
+  height: 40rem;
+  border: 3px solid #fafafa10;
+  border-radius: 1rem;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  color: white;
+}
+
+.glass h5{
+  color: white;
+
+}
+.form-text{
+  color: white;
+}
+.cerrar{
+  background-color: white;
 }
