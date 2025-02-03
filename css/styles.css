@@ -8,6 +8,8 @@ display: flex;
 flex-direction: row;
 background-color: black;
 padding: 0 50px;
+}
+
 a{
   text-decoration: none;
   color: white;
@@ -16,7 +18,7 @@ img{
 width: 150px;
 height: 150px;
 }
-}
+
 .footer{
   display: flex;
   flex-direction: row;
@@ -139,6 +141,10 @@ margin-top: -9px;
 .registro:hover{
 color: white;
 }
+.nav-link{
+
+  color: white;
+}
 .nav-link:hover{
   color: rgb(134, 0, 0);
 
@@ -179,4 +185,65 @@ transition: 0.3s ease-in-out;
 }
 .cerrar{
   background-color: white;
+}
+
+.contenedor404{
+
+  width: 80rem;
+  height: 50rem;
+  border: 3px solid #fafafa10;
+  border-radius: 1rem;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  color: white;
+
+}
+.main404{
+
+  display: flex;
+  justify-content: center;
+  background: url(../imagenes/fondo404.png);
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border: 3px solid #fafafa10;
+border-radius: 25px;
+
+}
+.mensaje h1{
+ font-size: 100px;
+
+ 
+}
+.mensaje{
+  margin-top: -100px;
+  
+ }
+.triangulo img{
+  width: 250px;
+  height: 200px;
+
+
+}
+.h3 h3{
+  font-size: 40px;
+}
+.boton404 a{
+  background-color: rgb(134, 0, 0);
+border-color: white;
+color: white;
+height: 4rem;
+display: flex;
+align-items: center;
+
+}
+.boton404 a:hover{
+  background-color: white;
+border-color: rgb(134, 0, 0) ;
+color: rgb(134, 0, 0);
+filter: drop-shadow(2px 2px 2px);
+transition: 0.3s ease-in-out;
+height: 4rem;
+
 }
