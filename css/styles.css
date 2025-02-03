@@ -128,3 +128,33 @@
   border-radius: 25px;
   
 }
+.cuerpo{
+
+  background-color: black;
+}
+.registro{
+  color: white;
+  margin-top: -9px;
+}
+.registro:hover{
+  color: white;
+}
+.nav-link:hover{
+  color: white;
+
+}
+.boton button{
+  background-color: rgb(134, 0, 0);
+  border-color: white;
+  color: white;
+}
+.boton button:hover{
+  background-color: white;
+  border-color: rgb(134, 0, 0) ;
+  color: rgb(134, 0, 0);
+  filter: drop-shadow(2px 2px 2px);
+  transition: 0.3s ease-in-out;
+}
+.modal-title{
+  color: black;
+}
