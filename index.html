@@ -6,7 +6,7 @@
     <meta name="keywords" content="autos, concesionaria, Volkswagen, fiat, renault, peugeot, citroen, honda, toyota, hyundai, ford, chevrolet, suzuki, audi">
     <meta name="description" content="AutoZen es una concesionaria que combina estilo, confiabilidad y tranquilidad en cada vehículo. Nuestro compromiso es ofrecer una experiencia de compra fluida y sin complicaciones, con una amplia selección de autos de calidad, desde modelos económicos hasta de alta gama. En AutoZen, conducir el auto de tus sueños está a solo un paso. ¡Déjate llevar por la tranquilidad del camino!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagenes/favicon.png">
+    <link rel="shortcut icon" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
@@ -14,84 +14,43 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Pagina Principal</title>
 </head>
-<body class="cuerpo">
+<body>
+    
+
+
+
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"><img src="imagenes/logo.png" alt="logo de la empresa"></a>
+              <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse d-flex " id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Inicio</a>
+                    <a class="nav-link" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/paginas/sobrenosotros.html">Sobre Nosotros</a>
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
                   </li>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Galeria</a>
-                      </li>
-                  </ul>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-end">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Iniciar Sesion</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
-                         Registrarse
-                        </button>
-                      
-                        <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="registroModalLabel">Formulario de Registro</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <form action="#" method="POST">
-                                  <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre completo</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
-                                    <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                    <div class="form-text">Ingresa un correo electrónico válido.</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="password" name="password" required minlength="6" maxlength="20">
-                                    <div class="form-text">La contraseña debe tener entre 6 y 20 caracteres.</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
-                                    <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
-                                  </div>
-                                  <div class="boton">
-                                  <button type="submit" class="btn btn-primary">Registrar</button></div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div></a>
+                        <a class="nav-link" href="#">Registrarse</a>
                       </li>
                   </ul>
                 </ul>
               </div>
             </div>
           </nav>
-          <div class="contenedor py-3 mt-2">
-            <div class="d-flex justify-content-center">
-          <div class="titulo poppins-extralight d-flex justify-content-center align-items-center py-1"><h1>Nuestas Marcas</h1></div></div>
+          <div class="contenedor px-3">
+          <div class="titulo poppins-extralight d-flex justify-content-center py-1"><h1>Nuestas Marcas</h1></div>
           <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -156,19 +115,15 @@
   
 </div></div>
     </header>
-    <main class="main">
-      
-    <div class="contenedor-titulo d-flex justify-content-center py-5">  
-      <div class="titulo poppins-extralight d-flex justify-content-center align-items-center"><h2>Algunos de nuestros vehiculos disponibles</h2></div>
-    </div>
-      
-      <div class="container-fluid col-sm-12">
-      <div class="row col-12">
+    <main>
+      <div class="titulo poppins-extralight d-flex justify-content-center py-5"><h2>Algunos de nuestros vehiculos disponibles</h2></div>
+      <div class="container-fluid">
+        <div class="row col-12">
           <div class="col col-3 p-3"><div class="card" style="width: 18rem;">
   <img src="./imagenes/autoaudi.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">AUDI R8 </h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <h5 class="card-title">AUDI R8</h5>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -179,7 +134,7 @@
   <img src="./imagenes/citroenc4.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">CITROEN C4</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -190,7 +145,7 @@
   <img src="./imagenes/fiatfastback.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">FIAT FASTBACK</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -201,7 +156,7 @@
   <img src="./imagenes/fordranger.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">FORD RANGER RAPTOR</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -212,7 +167,7 @@
   <img src="./imagenes/hondacivic.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">HONDA CIVIC</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -223,7 +178,7 @@
   <img src="./imagenes/hyundaigenesis.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">HYUNDAI GENESIS</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -234,7 +189,7 @@
   <img src="./imagenes/peugeot208.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">PEUGEOT 208</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -245,7 +200,7 @@
   <img src="./imagenes/meganers.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">RENAULT MEGANE RS</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -256,7 +211,7 @@
   <img src="./imagenes/suzukijimny.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">SUSUKI JIMNY</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -267,7 +222,7 @@
   <img src="./imagenes/toyotacorolla.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">TOYOTA COROLLA</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -278,7 +233,7 @@
   <img src="./imagenes/vwamarok.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">VOLKSWAGEN AMAROK V6</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -289,7 +244,7 @@
   <img src="./imagenes/camaro.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">CHEVROLET CAMARO SS</h5>
-    <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
+    <p class="card-text">...</p>
     <div class="boton">
     <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
@@ -300,11 +255,11 @@
     </main>
 <footer class="footer">
         <div class="container-fluid d-flex">
-        <div class="col-4 col-md-2 col-lg-3 h-100 ">
-          <li><a href="index.html"> <img src="imagenes/logo.png" alt="logo de la pagina"></a></li>
+        <div class="col-3 ">
+            <img src="" alt="">
         </div>
 
-        <div class="decoracion col-4 col-md-2 col-lg-3 h-100">
+        <div class="decoracion col-3">
         <ul>
         <li><a href=""><img src="https://th.bing.com/th/id/R.b14f9cc80ba068f31512d69e2939772b?rik=zkdDif0Tw3AsJg&pid=ImgRaw&r=0" alt=""></a></li>
         <li><a href=""><img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png" alt=""></a></li>
@@ -312,14 +267,14 @@
       </ul>
         </div>
 
-        <div class="decoracion col-4 col-md-2 col-lg-3 h-100">
+        <div class="decoracion col-3">
          <ul>
         <li><a href="">Terminos y condiciones.</a></li>
         <li><a href="">Legales.</a></li>
       </ul>
       </div>
 
-        <div class="decoracion col-4 col-md-2 col-lg-3 h-100">
+        <div class="decoracion col-3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5169293754443!2d-65.20581302472!3d-26.82350607670039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1786d44ae1%3A0xd65c814c4a735409!2s25%20de%20Mayo%20550%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1738206658401!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>
