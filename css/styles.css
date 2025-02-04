@@ -74,7 +74,6 @@ object-fit: cover;
   
   &:hover{
     filter: drop-shadow(20px 20px 20px black);
-    height: 500px;
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
   }
