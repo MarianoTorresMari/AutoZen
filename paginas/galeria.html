@@ -13,77 +13,113 @@
 </head>
 <body class="cuerpo">
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html"><img src="/imagenes/logo.png" alt="logo de la empresa"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Inicio</a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="../imagenes/logo.png" alt="logo de la empresa"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
+              </li>
+            </ul>
+              <ul class="navbar-nav md-auto mb-2 mb-lg-0 align-item-end">
+                <li class="nav-item">
+                   <a class="nav-link" href="#"><!-- Button trigger modal -->
+<button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+Iniciar Sesión
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content glass2">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+    <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+<div class="mb-3">
+<label for="exampleInputEmail1" class="form-label">Email</label>
+<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="50" minlength="5" placeholder="ejemplo@gmail.com" required>
+<div id="emailHelp" class="form-text">Escribir correo electronico</div>
+</div>
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">Contraseña</label>
+<input type="password" class="form-control" id="exampleInputPassword1" required maxlength="20" minlength="6" pattern="[a-zA-Z]+[0-9]" required>
+</div>
+<div class="mb-3 form-check">
+<input type="checkbox" class="form-check-input" id="exampleCheck1">
+<label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
+</div>
+<div class="boton">
+<button type="submit" class="btn btn-primary mt-5">Ingresar</button>
+</div>
+</form>
+  </div>
+</div>
+</div>
+</div></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galeria</a>
-                  </li>
-                </ul>
-                  <ul class="navbar-nav md-auto mb-2 mb-lg-0 align-item-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Iniciar Sesion</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
-                         Registrarse
-                        </button>
-                      
-                        <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content glass">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="registroModalLabel">Formulario de Registro</h5>
-                                <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <form action="#" method="POST">
-                                  <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre completo</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
-                                    <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                    <div class="form-text">Ingresa un correo electrónico válido.</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="password" name="password" required minlength="6" maxlength="20">
-                                    <div class="form-text">La contraseña debe tener entre 6 y 20 caracteres.</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
-                                    <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
-                                  </div>
-                                  <div class="boton">
-                                  <button type="submit" class="btn btn-primary mt-5">Registrar</button></div>
-                                </form>
-                              </div>
-                            </div>
+                    <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
+                     Registrarse
+                    </button>
+                  
+                    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content glass">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="registroModalLabel">Formulario de Registro</h5>
+                            <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
-                        </div></a>
-                      </li>
-                  </ul>
-              </div>
-            </div>
-          </nav>
+                          <div class="modal-body">
+                            <form action="#" method="POST">
+                              <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
+                                <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="form-text">Ingresa un correo electrónico válido.</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" name="password" required minlength="6" maxlength="20">
+                                <div class="form-text">La contraseña debe tener entre 6 y 20 caracteres.</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
+                                <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
+                              </div>
+                              <div class="boton">
+                              <button type="submit" class="btn btn-primary mt-5">Registrar</button>
+                            </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
           </header>
           <main class="main d-flex justify-content-center">
             <div class="container-fluid m-5">

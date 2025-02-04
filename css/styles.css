@@ -230,8 +230,8 @@ border-radius: 25px;
 }
 
 .triangulo img{
-  width: 250px;
-  height: 200px;
+  width: 450px;
+  height: 100px;
 
 
 }
@@ -293,5 +293,11 @@ border-radius: 25px;
 
 .glass2 h1{
   color: white;
+}
+.face{
+  width: 47px;
+  height: 47px;
+  margin-top: 14px;
+  margin-right: 15px;
 }
 
