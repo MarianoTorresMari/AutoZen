@@ -18,30 +18,63 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo.png" alt="logo de la empresa"></a>
+          <a class="navbar-brand" href="/index.html"><img src="/imagenes/logo.png" alt="logo de la empresa"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
+                <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
               </li>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-center">
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+            </ul>
+              <ul class="navbar-nav md-auto mb-2 mb-lg-0 align-item-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="./galeria.html">Galeria</a>
-                  </li>
-              </ul>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Iniciar Sesion</a>
+                   <a class="nav-link" href="#"><!-- Button trigger modal -->
+<button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+Iniciar Sesión
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content glass2">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+    <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+<div class="mb-3">
+<label for="exampleInputEmail1" class="form-label">Email</label>
+<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="50" minlength="5" placeholder="ejemplo@gmail.com" required>
+<div id="emailHelp" class="form-text">Escribir correo electronico</div>
+</div>
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">Contraseña</label>
+<input type="password" class="form-control" id="exampleInputPassword1" required maxlength="20" minlength="6" pattern="[a-zA-Z]+[0-9]" required>
+</div>
+<div class="mb-3 form-check">
+<input type="checkbox" class="form-check-input" id="exampleCheck1">
+<label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
+</div>
+<div class="boton">
+<button type="submit" class="btn btn-primary mt-5">Ingresar</button>
+</div>
+</form>
+  </div>
+</div>
+</div>
+</div></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
@@ -59,12 +92,12 @@
                             <form action="#" method="POST">
                               <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
+                                <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="20" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
                                 <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
                               </div>
                               <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <input type="email" class="form-control" id="email" name="email" required maxlength="20">
                                 <div class="form-text">Ingresa un correo electrónico válido.</div>
                               </div>
                               <div class="mb-3">
@@ -76,9 +109,16 @@
                                 <label for="telefono" class="form-label">Teléfono</label>
                                 <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
                                 <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
+                                <div class="mb-3 form-check mt-3">
+                                  <input type="checkbox" class="form-check-input pt-3" id="exampleCheck1">
+                                  <label class="form-check-label " for="exampleCheck1" aria-required="true">Acepta terminos y condiciones</label>
+                                  
+                                </div>
                               </div>
+                              
                               <div class="boton">
-                              <button type="submit" class="btn btn-primary mt-5">Registrar</button></div>
+                              <button type="submit" class="btn btn-primary mt-5">Registrar</button>
+                            </div>
                             </form>
                           </div>
                         </div>
@@ -86,53 +126,60 @@
                     </div></a>
                   </li>
               </ul>
-            </ul>
           </div>
         </div>
       </nav>
-          <main>
+          <main class="mainp">
             <div class="container-fluid mb-3">
               <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2">
           <div class="card" style="width: 18rem;">
-            <img src="blob:https://web.whatsapp.com/70ee97be-f44a-4f9e-a8ae-a6a04bc163b6" class="card-img-top" alt="...">
+            <img src="/imagenes/cristian.jpeg" class="card-img-top" alt="foto cristian">
             <div class="card-body">
-              <p class="card-text"></p>
+              <p class="card-text">Nuestro Scrum Master</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2">
           <div class="card" style="width: 18rem;">
-            <img src="blob:https://web.whatsapp.com/c22bc690-d8f1-498f-b3ee-81efe502d8b3" class="card-img-top" alt="...">
+            <img src="/imagenes/antonella.jpeg" class="card-img-top" alt="foto antonella">
             <div class="card-body">
-              <p class="card-text"></p>
+              <p class="card-text">Nuestras Developers</p>
             </div>
           </div></div>
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2">
           <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
+            <img src="/imagenes/mariano.jpeg" class="card-img-top" alt="foto mariano">
             <div class="card-body">
-              <p class="card-text"></p>
+              <p class="card-text">Nuestro Lider Tecnico</p>
             </div>
           </div></div>
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2">
           <div class="card" style="width: 18rem;">
-            <img src="blob:https://web.whatsapp.com/7c1a5cc7-e1a4-4e29-823a-dc6d9965097b" class="card-img-top" alt="...">
+            <img src="/imagenes/melanie.jpeg" class="card-img-top" alt="foto melanie">
             <div class="card-body">
-              <p class="card-text"> </p>
+              <p class="card-text">Nuestras Developers</p>
             </div>
           </div></div> </div></div>
           <div class="contenedor-titulo d-flex justify-content-center py-5">  
           <div class="titulo poppins-extralight d-flex justify-content-center align-items-center"> <h1>Acerca de Nosotros</h1></div></div>
-          <div class=""> <p> En Autozen, nos apasiona ofrecerte la mejor experiencia en la compra de tu vehículo. Con más de 8 años de trayectoria en el sector, nos hemos consolidado como un referente en calidad, confianza y atención personalizada. Sabemos que elegir un auto es una decisión importante, por eso, nuestro equipo está comprometido a brindarte todo el apoyo y la información.</p>
-          
-          <p>Contamos con una amplia variedad de modelos nuevos y seminuevos, adaptados a todos los gustos, necesidades y presupuestos. Además, trabajamos con las mejores marcas del mercado para ofrecerte opciones de alta calidad, con garantía y la última tecnología. Desde vehículos compactos, familiares, hasta deportivos, tenemos lo que buscas, siempre con precios competitivos y condiciones de financiación flexibles para que puedas llevarte tu auto sin complicaciones.
+          <div class="sn d-flex">
+            <img src="/imagenes/hombre.jpeg" alt="imagen de hombre">
+            
+            <p class="p-5"> En Autozen, nos apasiona ofrecerte la mejor experiencia en la compra de tu vehículo. Con más de 8 años de trayectoria en el sector, nos hemos consolidado como un referente en calidad, confianza y atención personalizada. Sabemos que elegir un auto es una decisión importante, por eso, nuestro equipo está comprometido a brindarte todo el apoyo y la información.</p>
+       </div>
+       <div class="sn d-flex">
+        <p class="p-5">Contamos con una amplia variedad de modelos nuevos y seminuevos, adaptados a todos los gustos, necesidades y presupuestos. Además, trabajamos con las mejores marcas del mercado para ofrecerte opciones de alta calidad, con garantía y la última tecnología. Desde vehículos compactos, familiares, hasta deportivos, tenemos lo que buscas, siempre con precios competitivos y condiciones de financiación flexibles para que puedas llevarte tu auto sin complicaciones.
           
           En Autozen, más que vender autos, nos interesa construir relaciones duraderas con nuestros clientes.
           
+          
           Nos enorgullecemos
           
-          ¡Ven a conocernos Autozen!! </p> </div>
+          ¡Ven a conocernos Autozen!! </p>
+        <img src="/imagenes/niño.jpeg" alt="IMAGEN DE NIÑO">
+       </div>
+          
       
           </main>
 
@@ -143,24 +190,24 @@
               <div class="row">
                 
             <div class="logof col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
-              <li><a href="/index.html"> <img src="../imagenes/logo.png" alt="logo de la pagina"></a></li>
+              <li><a href="/index.html"> <img src="/imagenes/logo.png" alt="logo de la pagina"></a></li>
             </div>
-      
+    
             <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
             <ul>
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="https://th.bing.com/th/id/R.b14f9cc80ba068f31512d69e2939772b?rik=zkdDif0Tw3AsJg&pid=ImgRaw&r=0" alt=""></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img class="face" src="/imagenes/logoface.png" alt=""></a></li>
             <li><a href="https://www.instagram.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png" alt=""></a></li>
             <li><a href="https://www.tiktok.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/024/273/794/non_2x/tiktok-logo-transparent-free-png.png" alt=""></a></li>
           </ul>
             </div>
-      
+    
             <div class="decoracion col-sm-12 col-md-6 col-lg-3  d-flex justify-content-center align-items-center p-5">
              <ul>
-            <li><a href="">Terminos y condiciones.</a></li>
-            <li><a href="">Legales.</a></li>
+            <li><a href="/paginas/pagina404.html">Terminos y condiciones</a></li>
+            <li><a href="/paginas/pagina404.html">Legales</a></li>
           </ul>
           </div>
-      
+    
             <div class="decoracion col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5169293754443!2d-65.20581302472!3d-26.82350607670039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1786d44ae1%3A0xd65c814c4a735409!2s25%20de%20Mayo%20550%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1738206658401!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
