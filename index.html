@@ -92,12 +92,12 @@
                                 <form action="#" method="POST">
                                   <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre completo</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="20" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
                                     <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
                                   </div>
                                   <div class="mb-3">
                                     <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" required maxlength="20">
                                     <div class="form-text">Ingresa un correo electrónico válido.</div>
                                   </div>
                                   <div class="mb-3">
@@ -109,7 +109,13 @@
                                     <label for="telefono" class="form-label">Teléfono</label>
                                     <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
                                     <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
+                                    <div class="mb-3 form-check mt-3">
+                                      <input type="checkbox" class="form-check-input pt-3" id="exampleCheck1">
+                                      <label class="form-check-label " for="exampleCheck1" aria-required="true">Acepta terminos y condiciones</label>
+                                      
+                                    </div>
                                   </div>
+                                  
                                   <div class="boton">
                                   <button type="submit" class="btn btn-primary mt-5">Registrar</button>
                                 </div>
