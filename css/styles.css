@@ -313,3 +313,13 @@ img{
 .texto-audi p{
   color: white;
 }
+.mainp{
+border: 3px solid #fafafa10;
+border-radius: 25px;
+background-color: #fafafa10;
+
+}
+.mainp img{
+  padding: 20px;
+  border-radius: 50px;
+}
