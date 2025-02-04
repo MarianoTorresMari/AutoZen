@@ -176,7 +176,7 @@ transition: 0.3s ease-in-out;
 }
 .glass{
   width: 30rem;
-  height: 40rem;
+  height: 45rem;
   border: 3px solid #fafafa10;
   border-radius: 1rem;
   background: #fafafa10;
@@ -195,6 +195,7 @@ transition: 0.3s ease-in-out;
 .cerrar{
   background-color: white;
 }
+
 
 .contenedor404{
 
