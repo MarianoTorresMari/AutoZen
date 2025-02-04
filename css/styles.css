@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
 }
 .navbar{
 display: flex;
@@ -52,12 +55,6 @@ iframe{
   width: 250px;
   height: 150px;
 }
-
-.poppins-extralight {
-font-family: "Poppins", serif;
-font-weight: 200;
-font-style: normal;
-}
 .carousel-item img{
 
 width: 1000px;
@@ -71,14 +68,16 @@ object-fit: cover;
 
 }
 .card-gal{
+  
   &:hover{
     filter: drop-shadow(20px 20px 20px black);
     transition: 0.3s ease-in-out;
-    background-color: white;
+    transform: scale(1.1);
   }
 img {
 height: 300px;
 object-fit: cover;
+border-radius: 5px;
 }
 }
 .boton a{
@@ -177,7 +176,7 @@ transition: 0.3s ease-in-out;
 }
 .glass{
   width: 30rem;
-  height: 40rem;
+  height: 45rem;
   border: 3px solid #fafafa10;
   border-radius: 1rem;
   background: #fafafa10;
@@ -196,6 +195,7 @@ transition: 0.3s ease-in-out;
 .cerrar{
   background-color: white;
 }
+
 
 .contenedor404{
 
@@ -228,8 +228,8 @@ border-radius: 25px;
 }
 
 .triangulo img{
-  width: 250px;
-  height: 200px;
+  width: 450px;
+  height: 100px;
 
 
 }
@@ -276,7 +276,50 @@ border-radius: 25px;
   object-fit: cover;
   border: 3px solid #fafafa10;
 border-radius: 25px;
-  
-  
  }
  
+ .glass2{
+  width: 30rem;
+  height: 27rem;
+  border: 3px solid #fafafa10;
+  border-radius: 1rem;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  color: white;
+}
+
+.glass2 h1{
+  color: white;
+}
+.face{
+  width: 47px;
+  height: 47px;
+  margin-top: 14px;
+  margin-right: 15px;
+}
+.audi {
+img{
+  width: 100%;
+  height: 40%;
+}
+  p{
+    color: white;
+    font-weight:600 ;
+    font-style: italic;
+    font-size: 500%;
+  }
+}
+.texto-audi p{
+  color: white;
+}
+.mainp{
+border: 3px solid #fafafa10;
+border-radius: 25px;
+background-color: #fafafa10;
+
+}
+.mainp img{
+  padding: 20px;
+  border-radius: 50px;
+}

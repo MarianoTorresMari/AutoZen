@@ -33,14 +33,48 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
                   </li>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
+                  </li>
+                </ul>
+                  <ul class="navbar-nav md-auto mb-2 mb-lg-0 align-item-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
-                      </li>
-                  </ul>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Iniciar Sesion</a>
+                       <a class="nav-link" href="#"><!-- Button trigger modal -->
+<button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+  Iniciar Sesión
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content glass2">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+        <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="50" minlength="5" placeholder="ejemplo@gmail.com" required>
+    <div id="emailHelp" class="form-text">Escribir correo electronico</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" required maxlength="20" minlength="6" pattern="[a-zA-Z]+[0-9]" required>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
+  </div>
+  <div class="boton">
+  <button type="submit" class="btn btn-primary mt-5">Ingresar</button>
+  </div>
+</form>
+      </div>
+    </div>
+  </div>
+</div></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
@@ -58,12 +92,12 @@
                                 <form action="#" method="POST">
                                   <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre completo</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="20" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
                                     <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
                                   </div>
                                   <div class="mb-3">
                                     <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" required maxlength="20">
                                     <div class="form-text">Ingresa un correo electrónico válido.</div>
                                   </div>
                                   <div class="mb-3">
@@ -75,9 +109,16 @@
                                     <label for="telefono" class="form-label">Teléfono</label>
                                     <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
                                     <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
+                                    <div class="mb-3 form-check mt-3">
+                                      <input type="checkbox" class="form-check-input pt-3" id="exampleCheck1">
+                                      <label class="form-check-label " for="exampleCheck1" aria-required="true">Acepta terminos y condiciones</label>
+                                      
+                                    </div>
                                   </div>
+                                  
                                   <div class="boton">
-                                  <button type="submit" class="btn btn-primary mt-5">Registrar</button></div>
+                                  <button type="submit" class="btn btn-primary mt-5">Registrar</button>
+                                </div>
                                 </form>
                               </div>
                             </div>
@@ -85,7 +126,6 @@
                         </div></a>
                       </li>
                   </ul>
-                </ul>
               </div>
             </div>
           </nav>
@@ -170,7 +210,7 @@
     <h5 class="card-title">AUDI R8 </h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./productos/r8.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
@@ -247,7 +287,7 @@
     <h5 class="card-title">RENAULT MEGANE RS</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHI CULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
@@ -291,7 +331,7 @@
     <h5 class="card-title">CHEVROLET CAMARO SS</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./productos/camaro.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
@@ -314,7 +354,7 @@
 
         <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
         <ul>
-        <li><a href="https://www.facebook.com/" target="_blank"><img src="https://th.bing.com/th/id/R.b14f9cc80ba068f31512d69e2939772b?rik=zkdDif0Tw3AsJg&pid=ImgRaw&r=0" alt=""></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="face" src="./imagenes/logoface.png" alt=""></a></li>
         <li><a href="https://www.instagram.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png" alt=""></a></li>
         <li><a href="https://www.tiktok.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/024/273/794/non_2x/tiktok-logo-transparent-free-png.png" alt=""></a></li>
       </ul>
@@ -322,8 +362,8 @@
 
         <div class="decoracion col-sm-12 col-md-6 col-lg-3  d-flex justify-content-center align-items-center p-5">
          <ul>
-        <li><a href="">Terminos y condiciones.</a></li>
-        <li><a href="">Legales.</a></li>
+        <li><a href="./paginas/pagina404.html">Terminos y condiciones</a></li>
+        <li><a href="./paginas/pagina404.html">Legales</a></li>
       </ul>
       </div>
 
