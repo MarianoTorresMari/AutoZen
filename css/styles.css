@@ -1,22 +1,41 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .navbar{
+display: flex;
+flex-direction: row;
+background-color: black;
+padding: 0 50px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.navbar img{
+width: 150px;
+height: 150px;
+}
+
+.footer{
   display: flex;
   flex-direction: row;
+  justify-content:flex-start;
+  width: 100%;
+  height: 15%;
   background-color: black;
-  padding: 0 50px;
-  a{
-    text-decoration: none;
-    color: white;
-  }
- img{
-  width: 150px;
-  height: 150px;
- }
+  align-items: center;
+  padding: 50px;
+
+ /*  display: inline-block; */}
+
+ul{
+  display: flex;
+  margin: 0px 15px;
 }
+<<<<<<< HEAD
 .footer{
     display: flex;
     flex-direction: row;
@@ -53,12 +72,33 @@
     height: 150px;
  }
  
+=======
+li{
+  display: flex;
+  list-style: none;
+  margin: 0px 5px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+img{
+  width: 75px;
+  height: 75px;
+}
+iframe{
+  width: 250px;
+  height: 150px;
+}
+
+>>>>>>> f5063ba880b8b969ea40fce9d74b730320102b4f
 .poppins-extralight {
-  font-family: "Poppins", serif;
-  font-weight: 200;
-  font-style: normal;
+font-family: "Poppins", serif;
+font-weight: 200;
+font-style: normal;
 }
 .carousel-item img{
+<<<<<<< HEAD
   width: 1000px;
   height: 800px;
   object-fit: cover;
@@ -66,9 +106,34 @@
 .card img {
   height: 300px;
   object-fit: cover;
+=======
+
+width: 1000px;
+height: 800px;
+object-fit: cover;
+}
+.card img {
+
+height: 300px;
+object-fit: cover;
+>>>>>>> f5063ba880b8b969ea40fce9d74b730320102b4f
 
 }
+.card-gal{
+  
+  &:hover{
+    filter: drop-shadow(20px 20px 20px black);
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+img {
+height: 300px;
+object-fit: cover;
+border-radius: 5px;
+}
+}
 .boton a{
+<<<<<<< HEAD
   background-color: rgb(134, 0, 0);
   border-color: white;
   color: white;
@@ -92,65 +157,203 @@
   border: 3px solid #000000; 
   overflow:hidden;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+=======
+
+background-color: rgb(134, 0, 0);
+border-color: white;
+color: white;
+
+}
+.boton a:hover{
+
+background-color: white;
+border-color: rgb(134, 0, 0) ;
+color: rgb(134, 0, 0);
+filter: drop-shadow(2px 2px 2px);
+transition: 0.3s ease-in-out;
+
+}
+#carouselExampleIndicators{
+max-width: 1200px; 
+max-height: 600px; 
+margin: 0 auto; 
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 20px; 
+border: 3px solid #000000; 
+overflow:hidden;
+
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+>>>>>>> f5063ba880b8b969ea40fce9d74b730320102b4f
 }
 .main{
 
-  background-image: url(../imagenes/fondo.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 3px solid #fafafa10;
-  border-radius: 25px;
+background-image: url(../imagenes/fondo.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border: 3px solid #fafafa10;
+border-radius: 25px;
 
 }
 .titulo {
-  
-  width: 50rem;
-  height: 7rem;
-  border: 3px solid #fafafa10;
-  border-radius: 1rem;
-  background: #fafafa10;
-  backdrop-filter: blur(0.4rem);
-  -webkit-backdrop-filter: blur(0.4rem);
-  color: white;
-  
+
+width: 50rem;
+height: 7rem;
+border: 3px solid #fafafa10;
+border-radius: 1rem;
+background: #fafafa10;
+backdrop-filter: blur(0.4rem);
+-webkit-backdrop-filter: blur(0.4rem);
+color: white;
+
 }
 .contenedor{
-  background-image: url(../imagenes/fondo2.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 3px solid #fafafa10;
-  border-radius: 25px;
-  
+background-image: url(../imagenes/fondo2.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border: 3px solid #fafafa10;
+border-radius: 25px;
+
 }
 .cuerpo{
 
-  background-color: black;
+background-color: black;
 }
 .registro{
-  color: white;
-  margin-top: -9px;
+color: white;
+margin-top: -9px;
 }
 .registro:hover{
+color: white;
+}
+.nav-link{
+
   color: white;
 }
 .nav-link:hover{
-  color: white;
+  color: rgb(134, 0, 0);
 
 }
 .boton button{
   background-color: rgb(134, 0, 0);
   border-color: white;
   color: white;
+  width: 100%;
 }
 .boton button:hover{
-  background-color: white;
-  border-color: rgb(134, 0, 0) ;
-  color: rgb(134, 0, 0);
-  filter: drop-shadow(2px 2px 2px);
-  transition: 0.3s ease-in-out;
+background-color: white;
+border-color: rgb(134, 0, 0) ;
+color: rgb(134, 0, 0);
+filter: drop-shadow(2px 2px 2px);
+transition: 0.3s ease-in-out;
 }
 .modal-title{
   color: black;
 }
+.glass{
+  width: 30rem;
+  height: 40rem;
+  border: 3px solid #fafafa10;
+  border-radius: 1rem;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  color: white;
+}
+
+.glass h5{
+  color: white;
+
+}
+.form-text{
+  color: white;
+}
+.cerrar{
+  background-color: white;
+}
+
+.contenedor404{
+
+  width: 80rem;
+  height: 50rem;
+  border: 3px solid #fafafa10;
+  border-radius: 1rem;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  color: white;
+
+}
+.main404{
+
+  display: flex;
+  justify-content: center;
+  background: url(../imagenes/fondo404.png);
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border: 3px solid #fafafa10;
+border-radius: 25px;
+
+}
+.mensaje h1{
+ font-size: 100px;
+
+ 
+}
+
+.triangulo img{
+  width: 250px;
+  height: 200px;
+
+
+}
+.h3 h3{
+  font-size: 40px;
+}
+.boton404 a{
+  background-color: rgb(134, 0, 0);
+border-color: white;
+color: white;
+height: 4rem;
+display: flex;
+align-items: center;
+
+}
+.boton404 a:hover{
+  background-color: white;
+border-color: rgb(134, 0, 0) ;
+color: rgb(134, 0, 0);
+filter: drop-shadow(2px 2px 2px);
+transition: 0.3s ease-in-out;
+height: 4rem;
+ }
+ .logof img{
+
+  width: 200px;
+  height: 200px;
+ }
+ .publicidad{
+
+  width: 100%;
+  height: 300px;
+  border: 3px solid #fafafa10;
+border-radius: 25px;
+
+  
+  
+
+  
+ }
+ .publicidad img{ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #fafafa10;
+border-radius: 25px;
+  
+  
+ }
+ 

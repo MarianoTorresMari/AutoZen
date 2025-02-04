@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Galeria</title>
+</head>
+<body class="cuerpo">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html"><img src="/imagenes/logo.png" alt="logo de la empresa"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                </ul>
+                  <ul class="navbar-nav md-auto mb-2 mb-lg-0 align-item-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar Sesion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
+                         Registrarse
+                        </button>
+                      
+                        <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content glass">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="registroModalLabel">Formulario de Registro</h5>
+                                <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form action="#" method="POST">
+                                  <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
+                                    <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="form-text">Ingresa un correo electrónico válido.</div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" name="password" required minlength="6" maxlength="20">
+                                    <div class="form-text">La contraseña debe tener entre 6 y 20 caracteres.</div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
+                                    <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
+                                  </div>
+                                  <div class="boton">
+                                  <button type="submit" class="btn btn-primary mt-5">Registrar</button></div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          </header>
+          <main class="main d-flex justify-content-center">
+            <div class="container-fluid m-5">
+                <div class="row">
+                    
+                        <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/citroenc4.jpg" class="card-img-top" alt="citroenc4">
+                          </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/autoaudi.jpg" class="card-img-top" alt="autoaudi">
+                          </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/camaro.jpg" class="card-img-top" alt="camaro">
+                            </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/fiatfastback.jpg" class="card-img-top" alt="fiatfast">
+                            </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/fordranger.jpg" class="card-img-top" alt="fordranger">
+                            </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/hondacivic.jpg" class="card-img-top" alt="hondacivic">
+                            </div>                    
+                            
+                    
+                        <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/meganers.jpg" class="card-img-top" alt="meganers">
+                          </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/peugeot208.jpg" class="card-img-top" alt="peugeot208">
+                          </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/suzukijimny.jpg" class="card-img-top" alt="suzukijimny">
+                            </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/toyotacorolla.jpg" class="card-img-top" alt="toyotacorolla">
+                            </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/vwamarok.jpg" class="card-img-top" alt="vwamarok">
+                            </div>
+                          <div class="card-gal col-sm-6 col-md-6 col-lg-4 col-xl-2  p-2" style="width: 18rem;">
+                            <img src="/imagenes/hyundaigenesis.jpg" class="card-img-top" alt="hyundaigenesis">
+                            </div>
+                        
+                
+                </div>
+            </div>
+          </main>
+
+
+    <footer class="footer">
+      <div class="container-fluid d-flex justify-content-around">
+        <div class="row">
+          
+      <div class="logof col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
+        <li><a href="/index.html"> <img src="../imagenes/logo.png" alt="logo de la pagina"></a></li>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
+      <ul>
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="https://th.bing.com/th/id/R.b14f9cc80ba068f31512d69e2939772b?rik=zkdDif0Tw3AsJg&pid=ImgRaw&r=0" alt=""></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png" alt=""></a></li>
+      <li><a href="https://www.tiktok.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/024/273/794/non_2x/tiktok-logo-transparent-free-png.png" alt=""></a></li>
+    </ul>
+      </div>
+
+      <div class="decoracion col-sm-12 col-md-6 col-lg-3  d-flex justify-content-center align-items-center p-5">
+       <ul>
+      <li><a href="">Terminos y condiciones.</a></li>
+      <li><a href="">Legales.</a></li>
+    </ul>
+    </div>
+
+      <div class="decoracion col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5169293754443!2d-65.20581302472!3d-26.82350607670039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1786d44ae1%3A0xd65c814c4a735409!2s25%20de%20Mayo%20550%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1738206658401!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+      </div>
+  
+      
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
