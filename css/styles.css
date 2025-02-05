@@ -352,3 +352,12 @@ p{
 }
 
 }
+.card{
+  background:linear-gradient( to bottom,#fafafa10,white ) ;
+}
+.cart {
+  p{
+    font-weight: 1000;
+    text-decoration:underline rgb(134, 0, 0);
+  }
+}
