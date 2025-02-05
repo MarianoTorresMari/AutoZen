@@ -22,39 +22,6 @@ width: 150px;
 height: 150px;
 }
 
-.footer{
-  display: flex;
-  flex-direction: row;
-  justify-content:flex-start;
-  width: 100%;
-  height: 15%;
-  background-color: black;
-  align-items: center;
-  padding: 50px;
-
- /*  display: inline-block; */}
-
-ul{
-  display: flex;
-  margin: 0px 15px;
-}
-li{
-  display: flex;
-  list-style: none;
-  margin: 0px 5px;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-img{
-  width: 75px;
-  height: 75px;
-}
-iframe{
-  width: 250px;
-  height: 150px;
-}
 .carousel-item img{
 
 width: 1000px;
@@ -105,21 +72,21 @@ margin-bottom: 20px;
 border-radius: 20px; 
 border: 3px solid #000000; 
 overflow:hidden;
-
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
 }
-.main{
 
+.main{
 background-image: url(../imagenes/fondo.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 border: 3px solid #fafafa10;
 border-radius: 25px;
+min-height: 100vh;
 
 }
-.titulo {
 
+.titulo {
 width: 50rem;
 height: 7rem;
 border: 3px solid #fafafa10;
@@ -128,8 +95,8 @@ background: #fafafa10;
 backdrop-filter: blur(0.4rem);
 -webkit-backdrop-filter: blur(0.4rem);
 color: white;
-
 }
+
 .contenedor{
 background-image: url(../imagenes/fondo2.png);
 background-size: cover;
@@ -137,23 +104,25 @@ background-position: center;
 background-repeat: no-repeat;
 border: 3px solid #fafafa10;
 border-radius: 25px;
-
 }
-.cuerpo{
 
+.cuerpo{
 background-color: black;
 }
+
 .registro{
 color: white;
 margin-top: -9px;
 }
+
 .registro:hover{
 color: white;
 }
-.nav-link{
 
+.nav-link{
   color: white;
 }
+
 .nav-link:hover{
   color: rgb(134, 0, 0);
 
@@ -164,6 +133,7 @@ color: white;
   color: white;
   width: 100%;
 }
+
 .boton button:hover{
 background-color: white;
 border-color: rgb(134, 0, 0) ;
@@ -171,9 +141,11 @@ color: rgb(134, 0, 0);
 filter: drop-shadow(2px 2px 2px);
 transition: 0.3s ease-in-out;
 }
+
 .modal-title{
   color: black;
 }
+
 .glass{
   width: 30rem;
   height: 45rem;
@@ -187,18 +159,18 @@ transition: 0.3s ease-in-out;
 
 .glass h5{
   color: white;
-
 }
+
 .form-text{
   color: white;
 }
+
 .cerrar{
   background-color: white;
 }
 
 
 .contenedor404{
-
   width: 80rem;
   height: 50rem;
   border: 3px solid #fafafa10;
@@ -210,32 +182,29 @@ transition: 0.3s ease-in-out;
 
 }
 .main404{
-
   display: flex;
   justify-content: center;
   background: url(../imagenes/fondo404.png);
   background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-border: 3px solid #fafafa10;
-border-radius: 25px;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #fafafa10;
+  border-radius: 25px;
 }
+
 .mensaje h1{
  font-size: 100px;
-
- 
 }
 
 .triangulo img{
   width: 450px;
   height: 100px;
-
-
 }
+
 .h3 h3{
   font-size: 40px;
 }
+
 .boton404 a{
   background-color: rgb(134, 0, 0);
 border-color: white;
@@ -243,8 +212,8 @@ color: white;
 height: 4rem;
 display: flex;
 align-items: center;
-
 }
+
 .boton404 a:hover{
   background-color: white;
 border-color: rgb(134, 0, 0) ;
@@ -253,29 +222,25 @@ filter: drop-shadow(2px 2px 2px);
 transition: 0.3s ease-in-out;
 height: 4rem;
  }
- .logof img{
 
+ .logof img{
   width: 200px;
   height: 200px;
  }
- .publicidad{
 
+ .publicidad{
   width: 100%;
   height: 300px;
   border: 3px solid #fafafa10;
-border-radius: 25px;
-
-  
-  
-
-  
+  border-radius: 25px; 
  }
+
  .publicidad img{ 
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 3px solid #fafafa10;
-border-radius: 25px;
+ border-radius: 25px;
  }
  
  .glass2{
@@ -292,12 +257,14 @@ border-radius: 25px;
 .glass2 h1{
   color: white;
 }
+
 .face{
   width: 47px;
   height: 47px;
   margin-top: 14px;
   margin-right: 15px;
 }
+
 .audi {
 img{
   width: 100%;
@@ -310,16 +277,52 @@ img{
     font-size: 500%;
   }
 }
+
 .texto-audi p{
   color: white;
 }
-.mainp{
-border: 3px solid #fafafa10;
-border-radius: 25px;
-background-color: #fafafa10;
 
+.mainp{
+  border: 3px solid #fafafa10;
+  border-radius: 25px;
+  background-color: #fafafa10;
 }
+
 .mainp img{
   padding: 20px;
   border-radius: 50px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  align-items: center;
+  padding: 50px;
+  overflow-y: hidden;
+}
+
+ul{
+  display: flex;
+  margin: 0px 15px;
+}
+li{
+  display: flex;
+  list-style: none;
+  margin: 0px 5px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+img{
+  width: 75px;
+  height: 75px;
+}
+iframe{
+  width: 250px;
+  height: 150px;
 }
