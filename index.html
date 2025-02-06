@@ -27,69 +27,103 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse d-flex " id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Inicio</a>
+                    <a class="nav-link" href="./index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/paginas/sobrenosotros.html">Sobre Nosotros</a>
+                    <a class="nav-link" href="./paginas/sobrenosotros.html">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
                   </li>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav md-auto mb-2 mb-lg-0 align-item-end">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><!-- Button trigger modal -->
+  <button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+  Iniciar Sesión
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content glass2">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+      <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+  <div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">Email</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="20" minlength="5" placeholder="ejemplo@gmail.com" required>
+  <div id="emailHelp" class="form-text">Escribir correo electronico</div>
+  </div>
+  <div class="mb-3">
+  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+  <input type="password" class="form-control" id="exampleInputPassword1" required maxlength="15" minlength="6" pattern="[a-zA-Z]+[0-9]" placeholder="La contraseña debe tener entre 6 y 20 caracteres" required>
+  </div>
+  <div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
+  </div>
+  <div class="boton">
+  <button type="submit" class="btn btn-primary mt-5">Ingresar</button>
+  </div>
+  </form>
+    </div>
+  </div>
+  </div>
+  </div></a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galeria</a>
-                      </li>
-                  </ul>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Iniciar Sesion</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
-                         Registrarse
-                        </button>
-                      
-                        <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content glass">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="registroModalLabel">Formulario de Registro</h5>
-                                <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <a class="nav-link" href="#"><button type="button" class="nav-link registro" data-bs-toggle="modal" data-bs-target="#registroModal">
+                       Registrarse
+                      </button>
+                    
+                      <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content glass">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="registroModalLabel">Formulario de Registro</h5>
+                              <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="#" method="POST">
+                                <div class="mb-3">
+                                  <label for="nombre" class="form-label">Nombre completo</label>
+                                  <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="20" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
+                                  <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="email" class="form-label">Correo electrónico</label>
+                                  <input type="email" class="form-control" id="email" name="email" required minlength="3" maxlength="20" pattern="[A-Za-z ]+" required>
+                                  <div class="form-text">Ingresa un correo electrónico válido.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="password" class="form-label">Contraseña</label>
+                                  <input type="password" class="form-control" id="password" name="password" required minlength="6" maxlength="20">
+                                  <div class="form-text">La contraseña debe tener entre 6 y 20 caracteres.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="telefono" class="form-label">Teléfono</label>
+                                  <input type="number" class="form-control" id="telefono" name="telefono"  required  required minlength="1" maxlength="10"  pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
+                                  <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
+                                </div>
+                                <div class="boton">
+                                <button type="submit" class="btn btn-primary mt-5">Registrar</button>
                               </div>
-                              <div class="modal-body">
-                                <form action="#" method="POST">
-                                  <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre completo</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" pattern="[A-Za-z ]+" title="Solo se permiten letras y espacios">
-                                    <div class="form-text">Ingresa tu nombre completo. (Solo letras y espacios)</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                    <div class="form-text">Ingresa un correo electrónico válido.</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="password" name="password" required minlength="6" maxlength="20">
-                                    <div class="form-text">La contraseña debe tener entre 6 y 20 caracteres.</div>
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$" title="El número de teléfono debe tener 10 dígitos">
-                                    <div class="form-text">Ingresa un número de teléfono de 10 dígitos.</div>
-                                  </div>
-                                  <div class="boton">
-                                  <button type="submit" class="btn btn-primary mt-5">Registrar</button></div>
-                                </form>
-                              </div>
+                              </form>
                             </div>
                           </div>
-                        </div></a>
-                      </li>
-                  </ul>
+                        </div>
+                      </div></a>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -169,175 +203,167 @@
       
       <div class="container-fluid mb-3">
       <div class="row">
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/autoaudi.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">AUDI R8 </h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./productos/r8.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/citroenc4.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">CITROEN C4</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/fiatfastback.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">FIAT FASTBACK</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/fordranger.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">FORD RANGER RAPTOR</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/hondacivic.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">HONDA CIVIC</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/hyundaigenesis.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">HYUNDAI GENESIS</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/peugeot208.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">PEUGEOT 208</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/meganers.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">RENAULT MEGANE RS</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/suzukijimny.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">SUSUKI JIMNY</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/toyotacorolla.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">TOYOTA COROLLA</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/vwamarok.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">VOLKSWAGEN AMAROK V6</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./paginas/pagina404.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
 </div>
-          <div class="col sm-2 col-md-2 col-lg-3 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100 p-2"><div class="card" style="width: 18rem;">
   <img src="./imagenes/camaro.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">CHEVROLET CAMARO SS</h5>
     <p class="card-text">Conoce mas sobre este vehiculo ↓</p>
     <div class="boton">
-    <a href="#" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
+    <a href="./productos/camaro.html" class="btn btn-primary">MAS DETALLES DEL VEHICULO</a>
   </div>  
 </div>
 </div>
+
+</div></div>
+<div class="row">
+  <div class="publicidad col-3 col-sm-6 col-md-6 col-lg-4 col-xl-3  mt-3 p-2"><a href="https://boxesyerbabuena.com.ar/producto/lavado-premium/" target="_blank"><img src="./imagenes/ads.png" alt=""></a></div>
+</div>
+
 </div>
 
       
     </main>
 <footer class="footer">
-        <div class="container-fluid d-flex">
-        <div class="col-4 col-md-2 col-lg-3 h-100 ">
-          <li><a href="index.html"> <img src="imagenes/logo.png" alt="logo de la pagina"></a></li>
+        <div class="container-fluid d-flex justify-content-around">
+          <div class="row">
+            
+        <div class="logof col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
+          <li><a href="index.html"> <img src="./imagenes/logo.png" alt="logo de la pagina"></a></li>
         </div>
 
-<<<<<<< HEAD
-    <footer class="footer">
-        <div class="container-fluid d-flex">
-        <div class="col-3 ">
-            <img src="" alt="">
-        </div>
-
-        <div class="decoracion col-3">
-=======
-        <div class="decoracion col-4 col-md-2 col-lg-3 h-100">
->>>>>>> dev
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
         <ul>
-        <li><a href=""><img src="https://th.bing.com/th/id/R.b14f9cc80ba068f31512d69e2939772b?rik=zkdDif0Tw3AsJg&pid=ImgRaw&r=0" alt=""></a></li>
-        <li><a href=""><img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png" alt=""></a></li>
-        <li><a href=""><img src="https://static.vecteezy.com/system/resources/previews/024/273/794/non_2x/tiktok-logo-transparent-free-png.png" alt=""></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="face" src="./imagenes/logoface.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png" alt=""></a></li>
+        <li><a href="https://www.tiktok.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/024/273/794/non_2x/tiktok-logo-transparent-free-png.png" alt=""></a></li>
       </ul>
         </div>
 
-<<<<<<< HEAD
-        <div class="decoracion col-3">
-         <ul>
-        <li><a href="">Terminos y condiciones.</a></li>
-        <li><a href="">Legales</a></li>
-      </ul>
-      </div>
-
-        <div class="decoracion col-3">
-=======
+        <div class="col-sm-12 col-md-6 col-lg-3  d-flex justify-content-center align-items-center p-5">
+         <ul class="navbar-nav">
+        <li><a class="nav-link" href="./paginas/pagina404.html">Términos y condiciones</a></li>
+        <li><a class="nav-link" href="./paginas/pagina404.html">Legales</a></li>
         <div class="decoracion col-4 col-md-2 col-lg-3 h-100">
          <ul>
         <li><a href="">Terminos y condiciones.</a></li>
@@ -345,18 +371,15 @@
       </ul>
       </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-5">
         <div class="decoracion col-4 col-md-2 col-lg-3 h-100">
->>>>>>> dev
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5169293754443!2d-65.20581302472!3d-26.82350607670039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1786d44ae1%3A0xd65c814c4a735409!2s25%20de%20Mayo%20550%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1738206658401!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </div>
         </div>
     
         
     </footer>
-<<<<<<< HEAD
-
-=======
->>>>>>> dev
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
