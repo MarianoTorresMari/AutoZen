@@ -326,6 +326,9 @@ img{
 border: 3px solid #fafafa10;
 border-radius: 25px;
 background-color: #fafafa10;
+max-width: 100%;
+overflow: hidden;
+
 
 }
 .mainp img{
@@ -333,13 +336,27 @@ background-color: #fafafa10;
   border-radius: 50px;
 }
 .sn {
+  display: flex;
+  
 p{
   color: white;
 }
 img{
-  width: 100%;
-  height: 50%;
+  width: 500px;
+  height: 700px;
+  max-width: 100%;
+  object-fit: cover;
 }
+
+}
+@media (max-width: 900px){
+
+  .sn {
+    flex-wrap: wrap;
+    
+  }
+  
+  
 }
 .titl{
   color: white;
@@ -354,10 +371,21 @@ p{
 }
 .card{
   background:linear-gradient( to bottom,#fafafa10,white ) ;
+  object-fit: scale-down;
 }
 .cart {
   p{
     font-weight: 1000;
     text-decoration:underline rgb(134, 0, 0);
   }
+}
+.carta{
+
+  
+  max-width: 100%;
+  padding: auto;
+  margin: auto;
+  object-fit:cover;
+  overflow: hidden;
+  
 }
